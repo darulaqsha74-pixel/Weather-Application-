@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+     <h1>WHAT'S THE WEATHER NOW ?    ☀️ </h1><br><br>
+
+    <div class="mainContainer">
+        <div class="search-box">
+            <input type="text" id="cityinput" placeholder="Search for a city...">
+            <button id="searchBtn" onclick="search()">Search</button>
+        </div>
+
+        <div class="weather-header">
+                <div class="city-info">
+                    <h1 id="cityName">Madrid</h1>
+                    <p id="wetherDescription">Chance of rain: 0%</p>
+                    <h2 id="temparature">31°C</h2>
+                </div>
+        </div>
+
+        <div class="small">
+            <p>HUMIDITY  :</p>
+            <p id="humudity">80%</p><br>
+             <p>PRESSURE  :</p>
+            <p id="pressure">24 atmPa</p><br>
+
+        </div>
+
+
+    </div>
+
+    <script src="js/app.js"></script>
+
 </body>
 </html>
